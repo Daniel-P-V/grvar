@@ -18,7 +18,7 @@ program grvar
 	#delimit cr
 	*-------------------------------------------------------*
 	*- Check if the dataset is tsset and create panel local-*
-    *-------------------------------------------------------*
+    	*-------------------------------------------------------*
 	qui tsset
 	if "`r(panelvar)'"!="" local pvar `r(panelvar)'
 	*------------------------------*
@@ -31,7 +31,7 @@ program grvar
 	*- Time var for the formula -*
 	*----------------------------*	
 	if "`pvar'"!="" bys `pvar': gen `t' = _n // if is a panel data
-	else gen `t' = _n 						 // if is a time serie
+	else gen `t' = _n 			// if is a time serie
 	*--------------------------------------*
 	*- Create or replace the new variable -*
 	*--------------------------------------*	
