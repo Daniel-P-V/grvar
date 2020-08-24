@@ -44,7 +44,7 @@ But if the growth rate is not constant, we cannot use that specification, the so
 
  	{txt}
 	         {c TLC}{hline 50}{c TRC}
-	         {c |}{res} time   growthvar   var   output{txt}                  {c |}
+	         {c |}{res} time   growthvar   var   output{txt}             {c |}
     	         {c LT}{hline 50}{c RT}
 	         {c |}  1        .         x     x{txt}                      {c |}
 	         {c |}  2        r1        .     x*(1+r1){txt}               {c |}
